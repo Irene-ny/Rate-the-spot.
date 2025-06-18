@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+    }
+
+    .search-box {
+      width: 60%;
+      padding: 15px;
+      font-size: 1em;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .search-box:focus {
+      border-color: #3b82f6;
+    }
+
+    .search-results {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .result-item {
+      margin: 10px auto;
+      padding: 10px;
+      width: 60%;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+     header, footer { background: #3b61d1; color: white; padding: 15px; text-align: center; }
+    
+  </style>
+</head>
+<body>
+
+  <div class="header">Search</div>
+
+  <div class="search-container">
+    <input type="text" class="search-box" placeholder="Search for a location, spot or review...">
+  </div>
+
+  <div class="search-results">
+    <div class="result-item">Grill Hot London - Oxford Street</div>
+    <div class="result-item">Ice Cream Heaven - High Street</div>
+    <div class="result-item">Burger Mania - Downtown</div>
+
+    <footer><a href="index.html" style="color:white;">← Back to Home</a></footer>
+  </div>

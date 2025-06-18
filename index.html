@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rate the Spot - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #ffff;
+    }
+
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #B0595A;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      padding:10px;
+    }
+
+    .logo img{
+      width: 150px;
+      height: 70px;
+      border-radius: 60px;
+
+    }
+
+    .top-icons .icon {
+      margin-left: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .search-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      
+    }
+
+    .search-section input {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid black;
+      border-radius: 20px 0 0 20px;
+      outline: none;
+    }
+
+    .search-section button {
+      padding: 10px 20px;
+      border: 2px solid black;
+      background: #E94F25;
+      color:#E94F25;
+      font-size: 10px;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding: 10px 20px;
+    }
+
+    .card {
+      background: #3F6FC4;
+      border-radius: 15px;
+      padding: 10px;
+      min-width: 200px;
+      color: white;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .top-spots {
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .spot {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .spot img {
+      width: 70px;
+      height: 80px;
+      object-fit: scale-down;
+      border-radius: 8px;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #3F6FC4;
+      display: flex;
+      justify-content: space-around;
+      color: white;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="logo"> <img src="images/logo.png" alt="html logo"></div>
+    <div class="top-icons">
+      <span class="icon search">search</span>
+      <span class="icon profile">profile</span>
+      <span class="icon menu">☰</span>
+    </div>
+  </header>
+
+  <!-- Search Bar -->
+  <section class="search-section">
+    <input type="text" placeholder="Find the best location" />
+    <button><img src="images/search.svg" alt=""></button>
+  </section>
+
+  <!-- Horizontal Cards -->
+  <section class="carousel">
+    <div class="card">
+      <img src="images/beach.png" alt="html Card 1" />
+      <p><strong>Green-bay Resort</strong><br>Ireland — 4.1 ★</p>
+    </div>
+    <div class="card">
+      <img src="images/nacho.png" alt="html Card 2" />
+      <p><strong>Meal-fiend Resort</strong><br>Mexico — 4.4 ★</p>
+    </div>
+    <div class="card">
+      <img src="images/grilling.png" alt="html Card 3" />
+      <p><strong>Meat Heaven</strong><br>USA — 4.2 ★</p>
+    </div>
+  </section>
+
+  <!-- Top Spot Grid -->
+  <section class="top-spots">
+    <h3>Top spot for this week</h3>
+    <div class="grid">
+      <div class="spot">
+        <img src="images/meat.png" alt="html Food 1" />
+        <div>
+          <strong>Steakhouse London</strong><br>London — ★★★★
+        </div>
+        <span>Saved</span>
+      </div>
+      <div class="spot">
+        <img src="images/chianti.png" alt="html food 2" />
+        <div>
+          <strong>tea way</strong><br>Nothingham — ★★★★★
+        </div>
+        <span>Saved</span>
+      </div>
+      <div class="spot">
+        <img src="images/coffee.png" alt="html Food 3" />
+        <div>
+          <strong>Coffee land </strong><br>Plymouth — ★★★★★
+        </div>
+        <span>Saved</span>
+      </div>
+      <div class="spot">
+        <img src="images/chianti.png" alt="html Food 4" />
+        <div>
+          <strong>Brunch and play</strong><br>Kent — ★★★★★
+        </div>
+        <span>Saved</span>
+      </div>
+    </div>
+    <!-- Bottom Navigation -->
+    <footer class="bottom-nav">
+        <a href="index.html"><img src="images/home.svg" alt="html home"><br>Home</a>
+        <a href="search.html"><img src="images/search.svg" alt="html search"><br>Search</a>
+        <a href="review.html"><img src="images/review.svg" alt="html rev"><br>review</a>
+        <a href="saved.html"><img src="images/bookmark.svg" alt="html save"><br>Saved</a>
+        <a href="history.html"><img src="images/history.svg" alt="html his"><br>History</a>
+        <a href="notification.html"><img src="images/notification.svg" alt="html note"><br>Notification</a>
+        <a href="profile.html"><img src="images/profile.svg" alt="html profile"><br>Profile</a>
+    </footer>
+  </section>
+</body>
+  

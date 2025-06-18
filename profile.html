@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile - Rate the Spot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-bottom: 70px; /* to prevent footer overlap */
+      background: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #a65454;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+   .logo img{
+      width: 150px;
+      height: 70px;
+      border-radius: 60px;
+
+    }
+    
+
+    /* PROFILE SECTION */
+    .profile-header {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 30px;
+      background: #f4a794;
+    }
+
+    .username {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .member-date {
+      color: gray;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 20px;
+    }
+
+    .stat-block {
+      text-align: center;
+    }
+
+    .stat-block span {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* SETTINGS SECTION */
+    .info-section {
+      padding: 20px;
+    }
+
+    .info-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .info-item p {
+      margin: 0;
+    }
+
+    .info-item small {
+      color: gray;
+    }
+
+    .arrow {
+      font-size: 20px;
+      color: black;
+    }
+
+    /* FOOTER */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #3b61d1;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 8px 0;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    header, footer { background: #3b61d1; color: white; padding: 15px; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><img src="images/logo.png" alt="html logo"></div>
+    <div><img src="images/profile.svg" alt="html account"></div>
+  </header>
+
+  <div class="profile-header">
+    <img src="images/account.svg" alt="Profile Picture">
+    <div class="username">JOHN DOE</div>
+    <div class="member-date">Member since 2025</div>
+
+    <div class="stats">
+      <div class="stat-block">
+        <span>0</span>
+        Spot
+      </div>
+      <div class="stat-block">
+        <span>0</span>
+        Review
+      </div>
+      <div class="stat-block">
+        <span>0</span>
+        Photos
+      </div>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <div class="info-item">
+      <div>
+        <p><strong>About you</strong></p>
+        <small>Tell us about you</small>
+      </div>
+      <div class="arrow">›</div>
+    </div>
+
+    <div class="info-item">
+      <div>
+        <p><strong>Account setting</strong></p>
+      </div>
+      <div class="arrow">›</div>
+    </div>
+
+    <div class="info-item">
+      <div>
+        <p><strong>Policy</strong></p>
+      </div>
+      <div class="arrow">›</div>
+    </div>
+  </div>
+
+  <footer><a href="index.html" style="color:white;">← Back to Home</a></footer>
+
+</body>
+</html>

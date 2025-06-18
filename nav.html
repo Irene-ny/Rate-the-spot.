@@ -1,0 +1,39 @@
+<!-- Bottom Navigation -->
+<footer class="bottom-nav">
+  <a href="index.html">🏠<br>Home</a>
+  <a href="search.html">🔍<br>Search</a>
+  <a href="review.html">💾<br>Saved</a>
+  <a href="history.html">⏰<br>History</a>
+  <a href="notification.html">🔔<br>Notification</a>
+  <a href="profile.html">👤<br>Profile</a>
+</footer>
+
+<style>
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #3b61d1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .bottom-nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .bottom-nav a:hover {
+    text-decoration: underline;
+  }
+
+  body {
+    padding-bottom: 60px; /* Ensure content doesn’t hide behind nav */
+  }
+</style>
